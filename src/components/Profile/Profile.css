@@ -1,0 +1,51 @@
+.profile{
+    background-color: #F0F8FF;
+margin-right: auto;
+margin-left: auto;
+margin-top: 10px;
+width: 300px;
+padding-top: 20px;
+border-radius: 40px;
+}
+
+.description__Profile{
+text-align: center;
+}
+
+.name__Profile{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.tag__Profile,.location__Profile{
+    color: gray;
+}
+
+.stats__Profile{
+    align-items: center;
+background-color: #F5F5DC;
+
+    display: flex;
+    justify-content:space-around ;
+    text-align: center;
+    padding: 0;
+}
+
+.listProfile{
+width: 100px;
+padding: 10px;
+border: 1px solid #DCDCDC;
+border-radius: 5px;
+}
+
+.label{
+    color: gray;
+}
+
+.quantity{
+    display: block;
+    padding-top: 5px;
+    color: black;
+
+    font-weight: 700;
+}
