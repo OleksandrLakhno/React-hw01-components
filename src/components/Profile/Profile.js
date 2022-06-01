@@ -1,28 +1,28 @@
 import PropTypes from 'prop-types';
-import  './Profile.css';
+import p from "./Profile.module.css";
 
-function Profile({ user: { username, tag, location, avatar, stats: { followers,views,likes}} }) {
+function Profile({ username, tag, location, avatar, stats: { followers,views,likes}} ) {
     return (
-        <div className='profile'>
-            <div className='description__Profile'>
+        <div className={p.profile}>
+            <div className={ p.description}>
                 <img src={avatar} alt={username} height='300'/>
-                <p className='name__Profile'>{ username}</p>
-                <p className='tag__Profile'>{ tag}</p>
-                <p className='location__Profile'>{ location}</p>
+                <p className={p.name}>{ username}</p>
+                <p className={ p.tag}>{ tag}</p>
+                <p className={ p.location}>{ location}</p>
             </div>
 
-            <ul className='stats__Profile'>
-                <li className='listProfile'>
-                    <span className='label'>Followers</span>
-                    <span className='quantity'>{ followers}</span>
+            <ul className={ p.stats}>
+                <li className={ p.list}>
+                    <span className={ p.label}>Followers</span>
+                    <span className={ p.quantity}>{ followers}</span>
                 </li>
-                <li className='listProfile'>
-                    <span className='label'>Views</span>
-                    <span className='quantity'>{ views}</span>
+                <li className={ p.list}>
+                    <span className={ p.label}>Views</span>
+                    <span className={ p.quantity}>{ views}</span>
                 </li>
-                <li className='listProfile'>
-                    <span className='label'>Likes</span>
-                    <span className='quantity'>{ likes}</span>
+                <li className={ p.list}>
+                    <span className={ p.label}>Likes</span>
+                    <span className={ p.quantity}>{ likes}</span>
                 </li>
             </ul>
         </div>

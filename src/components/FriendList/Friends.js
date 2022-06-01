@@ -1,12 +1,12 @@
-import "./Friends.css";
+import f from"./Friends.module.css";
 
 
 function Friends({ avatar, name, isOnline }) {
     return (
-        <li className="item__Friends">
-            <span className={ isOnline ? "statusOnline" : "statusOffline" }></span>
+        <li className={f.item}>
+            <span className={ isOnline ? f.statusOnline : f.statusOffline }></span>
             <img  src={avatar} alt={name} width='50' />
-            <p className="friendName">{name}</p>
+            <p className={f.friend }>{name}</p>
         </li>
     );  
 };

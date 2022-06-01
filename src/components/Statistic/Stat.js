@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import Statistic from './StatList';
-import './Staristic.css';
+import s from'./Staristic.module.css';
 
 function StatList({title, data }) {
     return (
-        <section className='statistics'>
-            {title && <h2 className='title'>{title}</h2>}
-            <ul className='statList'>
+        <section className={ s.statistics}>
+            {title && <h2 className={s.title}>{title}</h2>}
+            <ul className={ s.statList}>
                 {data.map(({ id, label, percentage }) => (
                     <Statistic key={id}
                         label={label}
@@ -20,7 +20,7 @@ function StatList({title, data }) {
 };
 
 StatList.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     data:PropTypes.shape({
         id: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,

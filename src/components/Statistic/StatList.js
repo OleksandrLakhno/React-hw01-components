@@ -1,10 +1,10 @@
-import './Staristic.css';
+import s from './Staristic.module.css';
 
 function Statistic({ label,percentage}) {
     return (
-        <li style={{backgroundColor:getRandomHexColor()}} className='item'>
-            <span className='labelStat'>{ label}</span>
-            <span className='percentage'>{ percentage}</span>
+        <li style={{ backgroundColor: getRandomHexColor() }} className={s.item}>
+            <span className={ s.labelStat}>{ label}</span>
+            <span className={ s.percentage}>{ percentage}</span>
         </li>
     );
 };

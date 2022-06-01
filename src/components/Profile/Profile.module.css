@@ -8,30 +8,29 @@ padding-top: 20px;
 border-radius: 40px;
 }
 
-.description__Profile{
+.description{
 text-align: center;
 }
 
-.name__Profile{
+.name{
     font-weight: 700;
     font-size: 20px;
 }
 
-.tag__Profile,.location__Profile{
+.tag,.location{
     color: gray;
 }
 
-.stats__Profile{
+.stats{
     align-items: center;
 background-color: #F5F5DC;
 
     display: flex;
-    justify-content:space-around ;
     text-align: center;
-    padding: 0;
+    padding: 0; 
 }
 
-.listProfile{
+.list{
 width: 100px;
 padding: 10px;
 border: 1px solid #DCDCDC;
